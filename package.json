@@ -1,6 +1,6 @@
 {
-  "name": "buefy",
-  "version": "0.7.7",
+  "name": "@narma/buefy",
+  "version": "0.7.7-1",
   "homepage": "https://buefy.org",
   "description": "Lightweight UI components for Vue.js based on Bulma",
   "author": "Rafael Beraldo <rafael.pimpa@gmail.com>",
@@ -18,10 +18,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/buefy/buefy.git"
+    "url": "https://github.com/narma/buefy.git"
   },
   "bugs": {
-    "url": "https://github.com/buefy/buefy/issues"
+    "url": "https://github.com/narma/buefy/issues"
   },
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -87,7 +87,7 @@
     "jest": "23.5.0",
     "jest-serializer-vue": "0.3.0",
     "lint-staged": "6.1.1",
-    "node-sass": "4.11.0",
+    "node-sass": "4.12.0",
     "opn": "4.0.2",
     "optimize-css-assets-webpack-plugin": "3.2.0",
     "optimize-js-plugin": "0.0.4",
