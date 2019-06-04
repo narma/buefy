@@ -586,6 +586,21 @@ export default {
             return sorted
         },
 
+        currentPage(newVal) {
+            this.newCurrentPage = newVal
+        },
+
+        defaultSortDirection(newSort) {
+            this.isAsc = newSort.toLowerCase() === 'asc'
+            this.sort(this.currentSortColumn, true)
+        },
+
+        defaultSort(newSort) {
+            this.firstTimeSort = true
+            this.initSort()
+            this.firstTimeSort = false
+        },
+
         /**
         * Sort the column.
         * Toggle current direction on column if it's sortable
