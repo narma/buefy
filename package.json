@@ -2,6 +2,7 @@
   "name": "@narma/buefy",
   "version": "0.7.8-1",
   "homepage": "https://buefy.org",
+  "private": false,
   "description": "Lightweight UI components for Vue.js based on Bulma",
   "author": "Rafael Beraldo <rafael.pimpa@gmail.com>",
   "maintainers": [
