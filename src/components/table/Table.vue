@@ -543,6 +543,17 @@ export default {
 
         currentPage(newVal) {
             this.newCurrentPage = newVal
+        },
+
+        defaultSortDirection(newSort) {
+            this.isAsc = newSort.toLowerCase() === 'asc'
+            this.sort(this.currentSortColumn, true)
+        },
+
+        defaultSort(newSort) {
+            this.firstTimeSort = true
+            this.initSort()
+            this.firstTimeSort = false
         }
     },
     methods: {
@@ -584,21 +595,6 @@ export default {
             }
 
             return sorted
-        },
-
-        currentPage(newVal) {
-            this.newCurrentPage = newVal
-        },
-
-        defaultSortDirection(newSort) {
-            this.isAsc = newSort.toLowerCase() === 'asc'
-            this.sort(this.currentSortColumn, true)
-        },
-
-        defaultSort(newSort) {
-            this.firstTimeSort = true
-            this.initSort()
-            this.firstTimeSort = false
         },
 
         /**
